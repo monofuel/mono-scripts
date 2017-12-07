@@ -10,6 +10,8 @@ set -euo pipefail
 
 GO_VERSION="${GO_VERSION:-1.9.2}"
 
+bash ./tools.bash
+
 if [[ $UID != 0 ]]; then
 	echo 'please run as root'
 	exit -1
