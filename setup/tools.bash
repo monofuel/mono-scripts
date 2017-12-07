@@ -14,7 +14,7 @@ for tool in "${BASIC[@]}"; do
 done
 
 # Install TOOLS if listed
-if [[ -e "$TOOLS" ]]; then
+if [[ -z $TOOLS ]]; then
 	echo 'tools already installed'
 else
 
