@@ -1,4 +1,4 @@
-FROM golang:jessie
+FROM debian:jessie
 
 RUN useradd -ms /bin/bash test
 ENV MONO_USER='test'
@@ -15,4 +15,4 @@ ENV GO_PACKAGES="github.com/codegangsta/gin"
 RUN bash golang.bash
 
 ENV NODE_TOOLS="webpack typescript nodemon"
-# RUN bash nodejs.bash
+RUN bash nodejs.bash

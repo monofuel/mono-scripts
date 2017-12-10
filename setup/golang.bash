@@ -22,7 +22,7 @@ if [[ -e "$MONO_USER" ]]; then
 	exit -1
 fi
 
-if ! [ -x "$(command -v go)" ]; then
+if [ -x "$(command -v go)" ]; then
 	echo 'go already installed'
 	exit
 else
